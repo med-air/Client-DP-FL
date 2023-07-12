@@ -45,7 +45,7 @@ bash run_prostate_exp.sh
 ## Citation
 If this repository is useful for your research, please cite:
 
-       @article{jiang2022clientDP,
+       @article{jiang2023clientDP,
          title={Client-Level Differential Privacy via Adaptive Intermediary in Federated Medical Imaging},
          author={Jiang, Meirui and Zhong, Yuan and Le, Anjie and Li, Xiaoxiao and Dou, Qi},
          journal={International Conference on Medical Image Computing and Computer Assisted Intervention},
