@@ -1,0 +1,76 @@
+absl-py==1.0.0
+attrs==21.4.0
+Bottleneck @ file:///opt/conda/conda-bld/bottleneck_1657175564434/work
+cachetools==5.2.0
+certifi @ file:///croot/certifi_1683875369620/work/certifi
+charset-normalizer==2.1.1
+contourpy @ file:///opt/conda/conda-bld/contourpy_1663827406301/work
+cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
+dp-accounting==0.3.0
+et-xmlfile==1.1.0
+flit_core @ file:///opt/conda/conda-bld/flit-core_1644941570762/work/source/flit_core
+fonttools==4.25.0
+functorch==1.13.1
+google-auth==2.15.0
+google-auth-oauthlib==0.4.6
+grpcio==1.51.1
+h5py @ file:///tmp/abs_4aewd3wzey/croots/recipe/h5py_1659091371897/work
+idna==3.4
+importlib-metadata==5.2.0
+joblib==1.2.0
+kiwisolver @ file:///opt/conda/conda-bld/kiwisolver_1653292039266/work
+Markdown==3.4.1
+MarkupSafe==2.1.1
+matplotlib @ file:///croot/matplotlib-suite_1670466153205/work
+MedPy==0.4.0
+mkl-fft==1.3.1
+mkl-random @ file:///tmp/build/80754af9/mkl_random_1626186064646/work
+mkl-service==2.4.0
+monai @ file:///home/conda/feedstock_root/build_artifacts/monai_1666625935381/work
+mpmath==1.2.1
+munkres==1.1.4
+numexpr @ file:///croot/numexpr_1668713893690/work
+numpy==1.22.4
+nvidia-cublas-cu11==11.10.3.66
+nvidia-cuda-nvrtc-cu11==11.7.99
+nvidia-cuda-runtime-cu11==11.7.99
+nvidia-cudnn-cu11==8.5.0.96
+oauthlib==3.2.2
+opacus==1.3.0
+opencv-python==4.6.0.66
+openpyxl==3.1.1
+opt-einsum==3.3.0
+packaging @ file:///croot/packaging_1671697413597/work
+pandas==1.5.3
+Pillow==9.3.0
+ply==3.11
+protobuf==3.20.3
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+PyQt5-sip==12.11.0
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz @ file:///croot/pytz_1671697431263/work
+requests==2.28.1
+requests-oauthlib==1.3.1
+rsa==4.9
+scikit-learn==1.2.0
+scipy==1.7.3
+seaborn @ file:///croot/seaborn_1669627814970/work
+SimpleITK==2.2.1
+sip @ file:///tmp/abs_44cd77b_pu/croots/recipe/sip_1659012365470/work
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+tensorboard==2.11.0
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.1
+threadpoolctl==3.1.0
+toml @ file:///tmp/build/80754af9/toml_1616166611790/work
+torch==1.13.1
+torchaudio==0.7.0a0+ac17b64
+torchvision==0.8.0
+tornado @ file:///opt/conda/conda-bld/tornado_1662061693373/work
+tqdm @ file:///opt/conda/conda-bld/tqdm_1664392687731/work
+typing_extensions @ file:///croot/typing_extensions_1669924550328/work
+urllib3==1.26.13
+Werkzeug==2.2.2
+zipp==3.11.0
