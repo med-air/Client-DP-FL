@@ -3,7 +3,6 @@ import sys, os
 base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(base_path)
 from collections import OrderedDict
-from utils.layers import AggregationNorm, TestNorm
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -120,9 +119,7 @@ class _DenseLayer(nn.Sequential):
 
         self.add_module(
             "bn1",
-            TestNorm(num_input_features)
-            if generalize
-            else nn.BatchNorm2d(num_input_features, affine=False, track_running_stats=False),
+            nn.BatchNorm2d(num_input_features, affine=False, track_running_stats=False),
         ),
         self.add_module("relu1", nn.ReLU(inplace=True)),
         self.add_module(
@@ -133,9 +130,7 @@ class _DenseLayer(nn.Sequential):
         ),
         self.add_module(
             "bn2",
-            TestNorm(bn_size * growth_rate)
-            if generalize
-            else nn.BatchNorm2d(bn_size * growth_rate, affine=False, track_running_stats=False),
+            nn.BatchNorm2d(bn_size * growth_rate, affine=False, track_running_stats=False),
         ),
         self.add_module("relu2", nn.ReLU(inplace=True)),
         self.add_module(
@@ -174,9 +169,7 @@ class _Transition(nn.Sequential):
         generalize = kwargs["generalize"] if "generalize" in kwargs.keys() else False
         self.add_module(
             "bn",
-            TestNorm(num_input_features)
-            if generalize
-            else nn.BatchNorm2d(num_input_features, affine=False, track_running_stats=False),
+            nn.BatchNorm2d(num_input_features, affine=False, track_running_stats=False),
         )
     
         self.add_module("relu", nn.ReLU(inplace=True))
@@ -228,9 +221,7 @@ class DenseNet(nn.Module):
                     ),
                     (
                         "bn0",
-                        TestNorm(num_init_features)
-                        if generalize
-                        else nn.BatchNorm2d(
+                        nn.BatchNorm2d(
                             num_init_features, affine=False, track_running_stats=False
                         ),
                     ),
@@ -268,9 +259,7 @@ class DenseNet(nn.Module):
         # self.features.add_module('selu5',nn.SELU(inplace=False))
         self.features.add_module(
             "bn5",
-            TestNorm(num_features)
-            if generalize
-            else nn.BatchNorm2d(num_features, affine=False, track_running_stats=False),
+            nn.BatchNorm2d(num_features, affine=False, track_running_stats=False),
         )
         self.features.add_module("relu5", nn.ReLU(inplace=True))
 
