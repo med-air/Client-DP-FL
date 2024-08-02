@@ -31,9 +31,7 @@ from utils.util import setup_logger, get_timestamp
 from utils.loss import DiceLoss, JointLoss
 from nets.models import (
     DenseNet,
-    DenseNet_DC,
     UNet,
-    UNet_DC,
 )
 
 import torchvision.transforms as transforms
